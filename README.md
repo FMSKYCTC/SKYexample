@@ -1,2 +1,2 @@
 # SKYexample
-si workshop
+AI workshop
