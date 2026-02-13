@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3: Summary and Rhetorical Analysis</title>
+    <style>
+        :root {
+            --skyctc-blue: #00467f;
+            --skyctc-gold: #e7a614;
+            --white: #ffffff;
+            --light-gray: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-gray);
+        }
+
+        header {
+            background-color: var(--skyctc-blue);
+            color: var(--white);
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--skyctc-gold);
+        }
+
+        nav {
+            background: #fff;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        nav a {
+            color: var(--skyctc-blue);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        nav a:hover, nav a:focus {
+            background-color: var(--skyctc-gold);
+            color: var(--skyctc-blue);
+            outline: 2px solid var(--skyctc-blue);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            background: var(--white);
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        .hero-text {
+            border-left: 5px solid var(--skyctc-gold);
+            padding-left: 20px;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        h2 {
+            color: var(--skyctc-blue);
+            border-bottom: 2px solid var(--skyctc-gold);
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        .example-box {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .incorrect { border-top: 5px solid #d9534f; }
+        .correct { border-top: 5px solid #5cb85c; }
+
+        .btn-interact {
+            background-color: var(--skyctc-blue);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+
+        .btn-interact:hover {
+            background-color: var(--skyctc-gold);
+            color: var(--skyctc-blue);
+        }
+
+        .hidden-content {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background: #eee;
+            border-radius: 4px;
+        }
+
+        .lesson-card {
+            border: 1px solid var(--skyctc-blue);
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .competency-badge {
+            display: inline-block;
+            background: var(--skyctc-blue);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+
+        /* Accessibility: skip to main link */
+        .skip-link {
+            position: absolute;
+            left: -10000px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        .skip-link:focus {
+            position: static;
+            width: auto;
+            height: auto;
+            background: var(--skyctc-gold);
+            color: #000;
+            padding: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header>
+    <h1>Week 3: Summary & Organization</h1>
+    <p>Writing for the Academic Conversation</p>
+</header>
+
+<nav aria-label="Lesson Navigation">
+    <a href="#overview">Module Overview</a>
+    <a href="#rhetoric">Writing About Writing</a>
+    <a href="#activities">Module Activities</a>
+    <a href="#competencies">Demonstrate Competency</a>
+    <a href="#assignments">Assignments</a>
+</nav>
+
+<main id="main-content">
+
+    <!-- MODULE OVERVIEW -->
+    <section id="overview" aria-labelledby="welcome-heading">
+        <h2 id="welcome-heading">Module Overview</h2>
+
+        <div class="hero-text">
+            <p>Welcome back to week 3, fabulous students!</p>
+            <p>
+                This week, we are discussing how to write a summary and anticipating how to organize your first essay.
+                Remember, the concepts in this class are taught not for the sake of this class, but to teach you to effectively
+                write for other classes and critically read anything for the rest of your life!
+            </p>
+        </div>
+
+        <h3>The Importance of Summary</h3>
+        <p>
+            Summary writing is important because it shows that you’re able to discern what information is most important to capture
+            the implicit and explicit meaning of a text. Consider this movie summary:
+        </p>
+
+        <div class="example-box">
+            <strong>Interactive Challenge: Guess the Movie Summary</strong>
+            <p>
+                A mysterious criminal preys upon a large family’s home which results in the murder of a wife and her children.
+                The only survivors are the husband and his disabled son. As time passes, the son becomes defiant due to the father’s grief.
+                Yet in adolescence, the son is abducted into a larger network of trafficking. The widowed man embarks on a journey to find his
+                abducted son. With the help of a deranged stranger, he overcomes a deluge of near-death experiences across his journey to the
+                southern hemisphere. Caged and imprisoned, the son seeks to break from his cell with his fellow inmates. Through teamwork from
+                both parties, the man and his son are reunited and return to their home with new skills for coping and control reflective of more
+                healthy family dynamics.
+            </p>
+            <button class="btn-interact" onclick="toggleContent('summary-reveal')" aria-expanded="false">
+                Reveal the Title
+            </button>
+            <div id="summary-reveal" class="hidden-content">
+                <p>
+                    This is the plot of <strong>Finding Nemo</strong>. Does it capture the implicit meaning of the text well? Maybe.
+                    But what about the fish? What about the humor? What about Australia? What about the vegan Sharks?
+                    Although it's understandable, it’s not exactly helpful.
+                </p>
+            </div>
+        </div>
+
+        <h3>Why Summary and Response Matter in the Academic Conversation</h3>
+        <p>
+            As we engage in the academic conversation and we share research with other academics like us, we must provide them with as much brief
+            information as we can so they are better able to understand how ideas are formulated quickly and come to their own conclusions.
+            If you provide an academic with precise information before convincing them of your argument, you are building your ethos, your credibility,
+            and making a larger impact in the conversation. A well-read and clear speaker is more likely to be heard.
+        </p>
+        <p>
+            Response writing is important because it allows you to direct the conversation based on the information you summarized. Many people seek
+            to be heard and will work to steer the conversation away from what you value. Therefore, you must command their attention with your writing.
+        </p>
+    </section>
+
+    <!-- WRITING ABOUT WRITING / RHETORIC -->
+    <section id="rhetoric" aria-labelledby="rhetoric-heading">
+        <h2 id="rhetoric-heading">Writing About Writing</h2>
+
+        <p>
+            The summary and response essay is four paragraphs. This is short, but that means every word you write holds more weight.
+            In this essay, you are not responding to the points made in the essay, you are arguing whether or not the rhetoric present in the essay is
+            effective or ineffective. Then, you are providing examples of that rhetoric and explaining how the writing techniques used by the author
+            appeal to the intended audience. <strong>You are writing about writing!</strong>
+        </p>
+
+        <p>
+            If we were rhetorically analyzing Martin Luther King Jr.’s “I Have a Dream Speech,” we would not talk about how it made us feel in 2024,
+            we would write about how the language and rhetorical techniques he used appealed to his audience of Americans in 1963. Racism was a much
+            larger issue in the 1960s, so the way Americans viewed race differed wildly.
+        </p>
+
+        <div class="example-box incorrect">
+            <h3>Example: What NOT To Do</h3>
+            <p><em>(Focusing only on the message/feelings)</em></p>
+            <blockquote>
+                When King states, “Now is the time to lift our nation from the quick sands of racial injustice to the solid rock of brotherhood.
+                Now is the time to make justice a reality for all of God's children” he argues that Black people are facing injustice, and it’s the
+                right time to make a change in American society. Racism is an issue that effects all Americans, not just American people of color.
+                By overcoming racism, America will become a more equal and ethical society which better reflects the society King dreams his children
+                will be a part of.
+            </blockquote>
+            <button class="btn-interact" onclick="toggleContent('feedback-1')" aria-expanded="false">
+                Why is this ineffective?
+            </button>
+            <div id="feedback-1" class="hidden-content">
+                <p>
+                    Is this a good paragraph? It’s not bad. It’s direct and clear and makes a fair point.
+                    But it doesn’t respond and assess the rhetoric of the speech. For the essay you’re writing, you identify how a quote rhetorically
+                    appeals to a specific audience and whether or not it’s effective.
+                </p>
+            </div>
+        </div>
+
+        <div class="example-box correct">
+            <h3>Example: The Right Thing To Do</h3>
+            <p><em>(Focusing on Rhetorical Appeals)</em></p>
+            <blockquote>
+                When King states, “Now is the time to lift our nation from the quick sands of racial injustice to the solid rock of brotherhood.
+                Now is the time to make justice a reality for all of God's children” he argues that Black people are facing injustice, and it’s the
+                right time to make a change in American society. By referring to Americans as God’s children, King is establishing his credibility
+                from his experience as a Baptist minister. King’s audience of 1960s Americans were mostly likely a very religious group, so by framing
+                his message about racism with religion makes his point more effective for this group of people.
+            </blockquote>
+            <button class="btn-interact" onclick="toggleContent('feedback-2')" aria-expanded="false">
+                Why is this effective?
+            </button>
+            <div id="feedback-2" class="hidden-content">
+                <p>
+                    The more effective paragraph is not writing about King’s argument but is instead writing about the rhetoric he used and how it’s
+                    effective at appealing to a specific group of people. This is what you’re doing with Desmond or Parker.
+                </p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Apply This to Your Authors</h3>
+            <ul>
+                <li>
+                    <strong>Desmond</strong> is talking to <strong>New York Times Magazine</strong> subscribers who are most likely liberal-minded
+                    middle class Americans. How does Demond use <strong>ethos, logos, pathos, or kairos</strong> to appeal to them?
+                </li>
+                <li>
+                    <strong>Parker</strong> wrote a letter to George Henderson, a sociologist in the 1970s. Sociologists are people who study the way
+                    people interact—how does Parker use <strong>ethos, logos, pathos, or kairos</strong> to appeal to those types of academics?
+                </li>
+            </ul>
+        </div>
+
+        <div class="example-box">
+            <h3>Need Help with Quote Integration?</h3>
+            <p>
+                If you are worried about how to incorporate quotes into your essay, here is a great video that explains
+                <strong>"Quote Sandwich"</strong> effectively.
+            </p>
+            <p><em>(Your instructor will provide the link in Blackboard.)</em></p>
+        </div>
+    </section>
+
+    <!-- MODULE ACTIVITIES -->
+    <section id="activities" aria-labelledby="activities-heading">
+        <h2 id="activities-heading">Module Activities</h2>
+
+        <div class="lesson-card">
+            <h3>Lesson 1 (Monday)</h3>
+            <ul>
+                <li>Watch and complete the video titled <strong>5.1: Writing Summary</strong>.</li>
+                <li>Read <strong>“Writing Summary"</strong> by Las Positas College to prepare for the next lesson.</li>
+            </ul>
+        </div>
+
+        <div class="lesson-card">
+            <h3>Lesson 2 (Wednesday)</h3>
+            <ul>
+                <li>Watch and complete video lessons <strong>6.1: Drafting, Organization, Paragraphing</strong> and <strong>6.2: Responding to Texts, Quote Integration</strong>.</li>
+                <li>Read: <strong>"Sustainable Meat Production and Reduced Consumption Can Feed the World"</strong> by Collin Dunn.</li>
+                <li>Read the <strong>Essay 1 Sample paper</strong> about that same reading.</li>
+                <li>Review the <strong>Essay 1 paragraphing handout</strong> that explains a sentence-by-sentence breakdown of the essay.</li>
+                <li>Complete the assignment <strong>"Essay 1 Organization."</strong></li>
+            </ul>
+            <p><strong>This week, you should also begin drafting your essay.</strong> The first draft of this essay is due next week.</p>
+        </div>
+    </section>
+
+    <!-- COMPETENCIES -->
+    <section id="competencies" aria-labelledby="competencies-heading">
+        <h2 id="competencies-heading">Demonstrate Competency</h2>
+
+        <p>We are practicing these two course competencies this week:</p>
+        <div class="example-box">
+            <div class="competency-badge">Course Competency 2</div>
+            <p><strong>2.</strong> Plan, draft, revise, proofread, and edit to produce well-written essays.</p>
+            <div class="competency-badge">Course Competency 4</div>
+            <p><strong>4.</strong> Respond in writing to college-level reading material to demonstrate comprehension of author’s purpose, main idea, and organization.</p>
+        </div>
+
+        <p>This week, you will demonstrate your competency in the <strong>"planning"</strong> section of CC 2.</p>
+    </section>
+
+    <!-- ASSIGNMENTS -->
+    <section id="assignments" aria-labelledby="assignments-heading">
+        <h2 id="assignments-heading">Assignments</h2>
+
+        <div class="example-box">
+            <h3>Graded Assignment List</h3>
+            <ul>
+                <li><strong>Homework:</strong> Essay 1 Organization (Due Saturday by 11:59pm)</li>
+                <li><strong>Draft your essay</strong> on your own time.</li>
+            </ul>
+        </div>
+
+        <div class="example-box">
+            <h3>What You’ve Learned</h3>
+            <p>By the end of this week, you will:</p>
+            <ul>
+                <li>Begin drafting your first major writing assignment</li>
+                <li>Learn to focus on writing about writing rather than responding emotionally to texts</li>
+                <li>Practice critical analysis of texts for an academic audience</li>
+            </ul>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2024 SKYCTC Writing Program | ADA Compliant Interactive Lesson</p>
+</footer>
+
+<script>
+    function toggleContent(id) {
+        const content = document.getElementById(id);
+        const btn = event.currentTarget; // uses the inline onclick event
+        const isHidden = content.style.display === "none" || content.style.display === "";
+
+        content.style.display = isHidden ? "block" : "none";
+        btn.setAttribute("aria-expanded", String(isHidden));
+    }
+</script>
+
+</body>
+</html>
